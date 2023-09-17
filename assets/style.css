@@ -1,0 +1,125 @@
+@charset "UTF - 8";
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+ #logo {
+    display: flex;
+    padding: 13px;
+    background-color:#4F200D;
+    gap: 20px;
+    justify-content: space-evenly;
+}
+#logo > img {
+    max-width: 150px;
+}
+#logo > h1 {
+    color: #FFD93D;
+}
+#logo strong {
+    text-shadow: 2px 2px 1px rgb(160, 16, 16);
+}
+
+nav > ul {
+    display: flex;
+    list-style-type: none;
+    background-color:#FF8400;
+    justify-content: space-around;
+}
+
+nav li:hover {
+    background-color: #4F200D;
+    color: #FFD93D;
+    cursor: pointer;
+}
+nav li {
+    width: 100%;
+    color : #4F200D;
+    text-decoration: none;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-size: 0.8em;
+    text-align: center;
+    padding: 15px 20px;
+    background-color:#FF8400;
+    border: none;
+    
+}
+main {
+    padding-top: 10px;
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    background-color: #F6F1E9;
+}
+#paginaInicial {
+   padding: 10px 40px;
+}
+#paginaInicial div  h2 {
+    padding: 6px 0px;
+    color: #4F200D;
+}
+#paginaInicial div li {
+    color: red;
+}
+#paginaInicial div li.iniciado {
+    color: rgb(0, 140, 255);
+}
+#paginaInicial div li.completo {
+    color: green;
+}
+#paginaInicial {
+    display: block;
+}
+#modulo1 {
+    display: none;
+}
+#modulo2 {
+    display: none;
+}
+#modulo3 {
+    display: none;
+}
+#modulo4 {
+    display: none;
+}
+
+aside {
+    height: 400px;
+    display: flex;
+    border: 3px solid rgba(0, 0, 0, 0.089);
+    padding: 0px 30px;
+    background-color:rgba(0, 0, 0, 0.089);
+    flex-direction: column;
+    justify-content: space-between;
+    margin-bottom: 10px;
+}
+
+aside div{
+    line-height: 28px;
+}
+
+footer {
+    padding: 5px;
+    background-color: brown;
+}
+footer > p {
+    color : white;
+    text-align: center;
+}
+footer > p > strong {
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    color: #FFD93D;
+}
+
+
+@media (max-width: 600px) {
+    aside {
+        background-color: antiquewhite;
+        flex-direction: row;
+        gap: 10px;
+        height: auto;
+    }
+}
+

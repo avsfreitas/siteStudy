@@ -4,29 +4,33 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Anotações Cesar</title>
-    <link rel="icon" href="imagens/conhecimento.ico" type="image/x-icon">
+    <link rel="icon" href="assets/imagens/conhecimento.ico" type="image/x-icon">
+    <link rel="stylesheet" href="assets/style.css">
+    <script src="assets/main.js"></script>
 </head>
 <body>
     <header>
-        <!--LOGO-->
-        <h1>Anotações da <strong>Eterna Estudante</strong></h1>
+        <div id="logo">
+            <img src="assets/imagens/dragondev.png" alt="Logo da Dragon Dev">
+            <h1>Anotações da <strong>Eterna Estudante</strong></h1>
+        </div>
         <nav>
             <ul>
-                <li><a href="">Home</a></li>
-                <li><a href="">Módulo 1</a></li>
-                <li><a href="">Módulo 2</a></li>
-                <li><a href="">Módulo 3</a></li>
-                <li><a href="">Módulo 4</a></li>
+                <li onclick="clicadoHome()">Home</li>
+                <li onclick="clicadoMod1()">Módulo 1</li>
+                <li onclick="clicadoMod2()">Módulo 2</li>
+                <li onclick="clicadoMod3()">Módulo 3</li>
+                <li onclick="clicadoMod4()">Módulo 4</li>
             </ul>
         </nav>
     </header>
-    <body>
-        <Article>
+    <main>
+        <section id="paginaInicial">
             <div>
                 <h2>Módulo 1 - Agilidade</h2>
                 <ol>
-                    <li>Fundamentos da agilidade</li>
-                    <li>Estimativas e métricas ágeis</li>
+                    <li class="iniciado">Fundamentos da agilidade</li>
+                    <li class="iniciado">Estimativas e métricas ágeis</li>
                     <li>Liderança ágil</li>
                     <li>Gestão de produto</li>
                 </ol>
@@ -62,17 +66,42 @@
                     <li>Práticas</li>
                 </ol>
             </div>
-        </Article>
+        </section>
+        <article id="modulo1">
+            <h2>Agilidade</h2>
+            <h3>Fundamentos da agilidade</h3>
+            <h3>Estimativas e métricas ágeis</h3>
+        </article>
+        <article id="modulo2">
+
+        </article>
+        <article id="modulo3">
+
+        </article>
+        <article id="modulo4">
+
+        </article>
         <aside>
-            <h3>Dicas para estudar</h3>
-            <ul>
-                <li>Livro de Paulo Carolli - <a href="">Larem optin</a>.</li>
-                <li><a href=""></a></li>
-                <li><a href=""></a></li>
-                <li><a href=""></a></li>
-            </ul>
+            <div>
+                <h2>Saiba mais</h2>
+                <h3>Livros</h3>
+                <ul>
+                    <li><a href="https://caroli.org/livro/funretrospectives-atividades-e-ideias-para-tornar-retrospectivas-ageis-mais-envolventes/" target="_blank">Funretrospectives</a> - Paulo Caroli</li>
+                </ul>
+                <h3>Sites</h3>
+                <ul>
+                    <li>Kanban by <a href="https://www.alura.com.br/artigos/metodo-kanban" target="_blank">Alura</a></li>
+                    <li>Scrum by <a href="https://www.alura.com.br/conteudo/scrum-agilidade-seu-projeto?utm_term=&utm_campaign=&utm_source=adwords&utm_medium=ppc&hsa_acc=7964138385&hsa_cam=19631310673&hsa_grp=&hsa_ad=&hsa_src=x&hsa_tgt=&hsa_kw=&hsa_mt=&hsa_net=adwords&hsa_ver=3&gclid=Cj0KCQjwx5qoBhDyARIsAPbMagCftOQmpbbVtnIyNRlRjorr1bARDLZgTa-d_5xoIRtgqDiraEt-FhoaAj-MEALw_wcB" target="_blank">Alura</a></li>
+                </ul>
+            </div> 
+            <div>
+                <h2>Legendas</h2>
+                <p><strong style="color: red;">Vermelho</strong> = Conteúdo não iniciado</p>
+                <p><strong style="color: rgb(0, 140, 255);">Amarelo</strong> = Conteúdo em andamento</p>
+                <p><strong style="color: green;">Verde</strong> = Conteúdo completo</p>
+            </div>
         </aside>
-    </body>
+    </main>
     <footer>
         <p>Desenvolvido pela <strong>Dragon Dev</strong></p>
     </footer>
