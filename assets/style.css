@@ -52,7 +52,20 @@ main {
     justify-content: space-around;
     flex-wrap: wrap;
     background-color: #F6F1E9;
+    line-height: 30px;
 }
+main article {
+    max-width: 450px;
+    padding-left: 10px;
+}
+main article img {
+    max-width: 450px;
+}
+main article h2 {
+    padding: 6px 0px;
+    color: #4F200D;
+}
+
 #paginaInicial {
    padding: 10px 40px;
 }
@@ -75,6 +88,7 @@ main {
 #modulo1 {
     display: none;
 }
+
 #modulo2 {
     display: none;
 }
@@ -102,7 +116,7 @@ aside div{
 
 footer {
     padding: 5px;
-    background-color: brown;
+    background-color: #4F200D;
 }
 footer > p {
     color : white;
